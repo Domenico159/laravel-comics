@@ -1,0 +1,22 @@
+// main
+
+main {
+    background-color: $bg-color;
+    border-bottom: 15px solid #0182f9;
+}
+
+.card {
+    width: calc(100% / 6 - 20px);
+    margin: 20px 10px;
+    min-height: 150px;
+}
+
+main button {
+    border-color: transparent;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+main button:focus {
+    border: 2px solid #fff;
+}

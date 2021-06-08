@@ -1,7 +1,20 @@
-
-*{
+@import "./vars";
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $color-secondary;
+}
+
+.c-primary {
+    color: $color-primary;
 }
