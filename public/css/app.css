@@ -33,6 +33,10 @@ a {
   justify-content: center;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 .h-100 {
   height: 100px;
 }
@@ -78,24 +82,99 @@ a {
   background-color: #0182f9;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 100px;
+  line-height: 96px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header a {
+  border-bottom: 5px solid transparent;
+  transition: color 0.3s, border 0.3s;
+  font-weight: 600;
+}
+
+header a:hover {
+  color: #0182f9;
+  border-bottom: 5px solid #0182f9;
+}
+
 main {
   background-color: #1c1c1c;
   border-bottom: 15px solid #0182f9;
+  flex-grow: 2;
+  padding-top: 120px;
+  padding-bottom: 30px;
 }
 
 .card {
   width: calc(100% / 6 - 20px);
   margin: 20px 10px;
   min-height: 150px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.2);
 }
 
 main button {
   border-color: transparent;
   margin: 20px 0;
   cursor: pointer;
+  transition: transform 0.3s;
+}
+
+main button:hover {
+  transform: scale(1.1);
 }
 
 main button:focus {
   border: 2px solid #fff;
+}
+
+footer {
+  background-color: #303030;
+  padding: 20px;
+}
+
+footer .button-footer button {
+  padding: 7px 20px;
+  text-transform: uppercase;
+  border: 1px solid #0182f9;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+footer .button-footer button:hover {
+  background-color: #0182f9;
+  transform: scale(1.1);
+}
+
+footer .follow a {
+  margin-right: 10px;
+  color: #0182f9;
+  font-weight: 600;
+  transition: transform 0.3s, border 0.3s;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 5px;
+}
+
+footer .follow a:hover {
+  transform: scale(1.2);
+  border-bottom: 3px solid #0182f9;
 }
 

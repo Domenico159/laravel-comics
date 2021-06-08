@@ -17,3 +17,9 @@ Route::get('/', function () {
     $prducts = config('products');
     return view('welcome', ['comics' => $prducts]);
 });
+
+
+
+Route::get('/news', function () {
+    return view('news',);
+});
